@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pole country</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="place_dots();place_numbers()">
+    <header>
+        <div class="header_elements unselectable">Карта</div>
+        <!--<div class="header_elements unselectable">Хатки</div>
+        <div class="header_elements unselectable">История</div>-->
+    </header>
+    <div class="map" id="map">
+        <img id="image" src="../karta/ver/v2/karta_for_site.jpg" alt="404" class="image">
+        <!--<canvas id="canv"></canvas>-->
+        <div id="num_div"></div>
+        <div id="dots_div" ></div>
+        <div id="settings" class="unselectable">
+            <h1>Настройки</h1>
+            <div>Точки <input checked id="in1" type="checkbox" oninput="if(in1.checked==true){dots_div.style.display='block'}else{dots_div.style.display='none'}"></div>
+            <div>Номера<input checked id="in3" type="checkbox" oninput="if(in3.checked==true){num_div.style.display='block'}else{num_div.style.display='none'}"></div>
+            <div>Линии <input checked id="in2" type="checkbox" oninput="if(in2.checked==false){image.src='../karta/ver/v2/karta.jpg'}else{image.src='../karta/ver/v2/karta_for_site.jpg'}"></div>
+        </div>
+        <div id="info">
+            <div class=no_text>Выберите точку чтобы посмотреть информацию..</div>
+        </div>
+
+</body>
+
+<script src="script.js"></script>
+</html>
